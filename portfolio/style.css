@@ -1,0 +1,133 @@
+@font-face {
+    font-family: Poppins;
+    src: url(fonts/Poppins-Medium.ttf);
+}
+
+@font-face {
+    font-family: Poppins;
+    font-weight: 700;
+    src: url(fonts/Poppins-Bold.ttf);
+}
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: Poppins, sans-serif;
+    --blue: #0ef;
+}
+
+body{
+    background-color: #1f242d;
+    color: #fff;
+}
+
+.header{
+    position: fixed;
+    top: 0;
+    right: 0;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px 10%;
+    z-index: 100;
+}
+
+a.logo{
+    font-size: 25px;
+    color: #fff;
+    text-decoration: none;
+    font-weight: 600;
+}
+
+nav a{
+    font-size: 16px;
+    color: #fff;
+    font-weight: 500;
+    text-decoration: none;
+    margin-left: 30px;
+    transition: .3s;
+}
+
+nav a.active,  nav a:hover {
+    color: var(--blue);
+}
+
+.home{
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 70px 10% 0;
+}
+
+.main-img img{
+    max-width: 450px;
+    max-height: 450px;
+    filter:grayscale();
+    border-radius: 50%;
+    box-shadow: 0 0 30px var(--blue); 
+}
+
+.home-content{
+    max-width: 600px;
+}
+
+.home-content h3{
+    font-size: 32px;
+}
+
+.home-content h3 span{
+    color: var(--blue);
+}
+
+.home-content h1{
+    font-size: 56px;
+    font-weight: 700;
+}
+.home-content p{
+    margin-top: 30px;
+    font-size: 18px
+}
+
+.social-media a{
+    display: inline-flex;
+    justify-content: center;
+    width: 35px;
+    height: 35px;
+    align-items: center;
+    border: 2px solid var(--blue);
+    border-radius: 50%;
+    margin: 20px 30px 20px 0;
+    color: var(--blue);
+    /* background-color: transparent; */
+    font-size: 20px;
+    text-decoration: none;
+    transition: 0.3s ease;
+}
+
+.social-media a:hover{
+    background-color: var(--blue);
+    color: #1f242d;
+    box-shadow: 0 0 20px var(--blue);
+}
+
+.btn{
+    display: inline-block;
+    color: #1f242d;
+    background-color: var(--blue);
+    padding: 12px 28px;
+    margin: 20px 0;
+    text-decoration: none;
+    border-radius: 30px;
+    font-size: large;
+    transition: .3s;
+}
+
+.btn:hover{
+    box-shadow: 0 0 20px var(--blue);
+    transform: scale(1.05);
+}
